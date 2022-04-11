@@ -10,6 +10,8 @@ package domain.sort;
 
 import java.util.Random;
 
+import domain.tools.Swap;
+
 /**
  * @ClassName: BubbleSort
  * @Description: 泡泡排序
@@ -28,19 +30,7 @@ public class BubbleSort {
 		}
 	}
 
-	/**
-	 * @Title: swap
-	 * @Description: TODO(這裡用一句話描述這個方法的作用)
-	 * @param data int[] array
-	 * @param j    The array index
-	 * @return void 返回型別
-	 * @throws
-	 */
-	public static void swap(int[] data, int x, int y) {
-		data[x] = data[x] ^ data[y];
-		data[y] = data[x] ^ data[y];
-		data[x] = data[x] ^ data[y];
-	}
+
 
 	public static void main(String[] args) {
 		init();
@@ -54,7 +44,7 @@ public class BubbleSort {
 		for (int i = 0; i < data.length; i++) {
 			for (int j = 0; j + 1 < data.length; j++) {
 				if (data[j] > data[j + 1]) {
-					swap(data, j, j + 1);
+					Swap.x_y(data, j, j + 1);
 				}
 			}
 		}
