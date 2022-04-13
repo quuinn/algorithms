@@ -40,14 +40,20 @@ public class SelectctionSort {
 			System.out.print(data[i] + " ");
 		}
 		// 1. LOOP
-		int tmp = 0;
-		for (int now = data.length - 1; now >= 0; now--) {
-			if (now == data.length - 1) {
-				tmp = now;
+		// 2. 外圈 loop 控制要處理的陣列位置
+		int cnt = 0;
+		for (int outer = data.length - 1; outer >= 0; outer--) {
+			int temp = 0;
+			for (int inner = 0; outer >= inner; inner++) {
+				temp = (data[temp] > data[inner]) ? temp : inner;
+				cnt++;
 			}
-			tmp = data[tmp] > data[now] ? tmp : now;
-			Swap.x_y(data, now, tmp);
+			if (temp != outer) {
+				Swap.x_y(data, temp, outer);
+			}
+
 		}
+		System.out.println("\n共執行次數: " + cnt);
 
 		// 2. 找出最大的數字並且與 data.length - loopIndex 位置互換
 		// 3. 打印排序後資料

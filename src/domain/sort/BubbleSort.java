@@ -39,15 +39,17 @@ public class BubbleSort {
 		for (int i = 0; i < data.length; i++) {
 			System.out.print(data[i] + " ");
 		}
-
+		int cnt = 0;
 		// 2. 排序, 小到大
 		for (int i = 0; i < data.length; i++) {
 			for (int j = 0; j + 1 < data.length; j++) {
 				if (data[j] > data[j + 1]) {
-					Swap.x_y(data, j, j + 1);
+					Swap.x_y(data, j, j + 1);					
 				}
+				cnt++;
 			}
 		}
+		System.out.println("\n共執行次數: " + cnt);
 		// 3. 打印排序後資料
 		System.out.println("\n打印排序後資料");
 		for (int i = 0; i < data.length; i++) {
