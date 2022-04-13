@@ -1,26 +1,28 @@
 /**   
-* @Title: BubbleSort.java 
+* @Title: SelectctionSort.java 
 * @Package domain.sort 
-* @Description: 泡泡排序 
+* @Description: TODO 
 * @author pigmilk
-* @date Apr 9, 2022 10:26:36 PM 
+* @date Apr 12, 2022 11:25:47 PM 
 * @version 1.0.0   
 */
 package domain.sort;
 
 import java.util.Random;
 
+import domain.tools.RandomFactory;
 import domain.tools.Swap;
 
 /**
- * @ClassName: BubbleSort
- * @Description: 泡泡排序
+ * @ClassName: SelectctionSort
+ * @Description: TODO(這裡用一句話描述這個類的作用)
  * @author pigmilk
- * @date Apr 9, 2022 10:26:36 PM
+ * @date Apr 12, 2022 11:25:47 PM
  */
-public class BubbleSort {
+public class SelectctionSort {
 	public static int[] data;
 	public static Random r;
+	public static RandomFactory rF;
 
 	public static void init() {
 		data = new int[5];
@@ -30,8 +32,6 @@ public class BubbleSort {
 		}
 	}
 
-
-
 	public static void main(String[] args) {
 		init();
 		// 1. 打印排序前資料
@@ -39,17 +39,23 @@ public class BubbleSort {
 		for (int i = 0; i < data.length; i++) {
 			System.out.print(data[i] + " ");
 		}
+		// 1. LOOP
+		// 2. 外圈 loop 控制要處理的陣列位置
 		int cnt = 0;
-		// 2. 排序, 小到大
-		for (int i = 0; i < data.length; i++) {
-			for (int j = 0; j + 1 < data.length; j++) {
-				if (data[j] > data[j + 1]) {
-					Swap.x_y(data, j, j + 1);					
-				}
+		for (int outer = data.length - 1; outer >= 0; outer--) {
+			int temp = 0;
+			for (int inner = 0; outer >= inner; inner++) {
+				temp = (data[temp] > data[inner]) ? temp : inner;
 				cnt++;
 			}
+			if (temp != outer) {
+				Swap.x_y(data, temp, outer);
+			}
+
 		}
 		System.out.println("\n共執行次數: " + cnt);
+
+		// 2. 找出最大的數字並且與 data.length - loopIndex 位置互換
 		// 3. 打印排序後資料
 		System.out.println("\n打印排序後資料");
 		for (int i = 0; i < data.length; i++) {
