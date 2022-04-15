@@ -1,23 +1,15 @@
 /**   
 * @Title: RandomFactory.java 
-* @Package domain.tools 
+* @Package com.quinn.tool 
 * @Description: TODO 
 * @author pigmilk
-* @date Apr 12, 2022 11:28:16 PM 
+* @date Apr 15, 2022 9:50:58 PM 
 * @version 1.0.0   
 */
-package domain.tools;
+package com.quinn.tool;
 
 import java.util.Random;
 
-/**
- * @ClassName: RandomFactory
- * @Description: TODO(這裡用一句話描述這個類的作用)
- * @author pigmilk
- * @date Apr 12, 2022 11:28:16 PM
- */
-
-// TODO
 public class RandomFactory {
 	public static Random getRandomData(int luckyNum, int dataLen) {
 		for (int i = 0; i < 5; i++) {

@@ -1,18 +1,18 @@
 /**   
 * @Title: Swap.java 
-* @Package domain.tools 
+* @Package com.quinn.tool 
 * @Description: TODO 
 * @author pigmilk
-* @date Apr 11, 2022 11:33:18 AM 
+* @date Apr 15, 2022 9:50:26 PM 
 * @version 1.0.0   
 */
-package domain.tools;
+package com.quinn.tool;
 
 /**
  * @ClassName: Swap
- * @Description: 轉換用的類別
+ * @Description: TODO(這裡用一句話描述這個類的作用)
  * @author pigmilk
- * @date Apr 11, 2022 11:33:18 AM
+ * @date Apr 15, 2022 9:50:26 PM
  */
 public class Swap {
 	/**
