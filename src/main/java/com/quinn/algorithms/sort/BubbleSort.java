@@ -1,27 +1,28 @@
 /**   
-* @Title: SelectctionSort.java 
-* @Package com.quinn.sort 
+* @Title: BubbleSort.java 
+* @Package com.quinn.algorithms.sort 
 * @Description: TODO 
 * @author pigmilk
-* @date Apr 15, 2022 9:50:13 PM 
+* @date Apr 15, 2022 9:49:38 PM 
 * @version 1.0.0   
 */
-package com.quinn.sort;
+package com.quinn.algorithms.sort;
 
 import java.util.Random;
-import com.quinn.tool.RandomFactory;
-import com.quinn.tool.Swap;
+
+import com.quinn.algorithms.tool.Swap;
 
 /**
- * @ClassName: SelectctionSort
+ * @ClassName: BubbleSort
  * @Description: TODO(這裡用一句話描述這個類的作用)
  * @author pigmilk
- * @date Apr 15, 2022 9:50:13 PM
+ * @date Apr 15, 2022 9:49:38 PM
  */
-public class SelectctionSort {
+
+
+public class BubbleSort {
 	public static int[] data;
 	public static Random r;
-	public static RandomFactory rF;
 
 	public static void init() {
 		data = new int[5];
@@ -38,23 +39,17 @@ public class SelectctionSort {
 		for (int i = 0; i < data.length; i++) {
 			System.out.print(data[i] + " ");
 		}
-		// 1. LOOP
-		// 2. 外圈 loop 控制要處理的陣列位置
 		int cnt = 0;
-		for (int outer = data.length - 1; outer >= 0; outer--) {
-			int temp = 0;
-			for (int inner = 0; outer >= inner; inner++) {
-				temp = (data[temp] > data[inner]) ? temp : inner;
+		// 2. 排序, 小到大
+		for (int i = 0; i < data.length; i++) {
+			for (int j = 0; j + 1 < data.length; j++) {
+				if (data[j] > data[j + 1]) {
+					Swap.x_y(data, j, j + 1);
+				}
 				cnt++;
 			}
-			if (temp != outer) {
-				Swap.x_y(data, temp, outer);
-			}
-
 		}
 		System.out.println("\n共執行次數: " + cnt);
-
-		// 2. 找出最大的數字並且與 data.length - loopIndex 位置互換
 		// 3. 打印排序後資料
 		System.out.println("\n打印排序後資料");
 		for (int i = 0; i < data.length; i++) {

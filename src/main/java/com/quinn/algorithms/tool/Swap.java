@@ -1,12 +1,12 @@
 /**   
 * @Title: Swap.java 
-* @Package com.quinn.tool 
+* @Package com.quinn.algorithms.tool 
 * @Description: TODO 
 * @author pigmilk
 * @date Apr 15, 2022 9:50:26 PM 
 * @version 1.0.0   
 */
-package com.quinn.tool;
+package com.quinn.algorithms.tool;
 
 /**
  * @ClassName: Swap
