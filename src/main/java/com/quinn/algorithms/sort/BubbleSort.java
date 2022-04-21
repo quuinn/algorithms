@@ -10,6 +10,8 @@ package com.quinn.algorithms.sort;
 
 import java.util.Random;
 
+import com.quinn.algorithms.infra.DataMaker;
+import com.quinn.algorithms.tool.Metrics;
 import com.quinn.algorithms.tool.Swap;
 
 /**
@@ -19,21 +21,11 @@ import com.quinn.algorithms.tool.Swap;
  * @date Apr 15, 2022 9:49:38 PM
  */
 
-
 public class BubbleSort {
-	public static int[] data;
-	public static Random r;
-
-	public static void init() {
-		data = new int[5];
-		r = new Random(72);
-		for (int i = 0; i < 5; i++) {
-			data[i] = r.nextInt(-10, 10);
-		}
-	}
+	private static int[] data = new DataMaker().getData();
+	private static Metrics m = new Metrics();
 
 	public static void main(String[] args) {
-		init();
 		// 1. 打印排序前資料
 		System.out.println("打印排序前資料");
 		for (int i = 0; i < data.length; i++) {
