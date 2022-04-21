@@ -23,7 +23,9 @@ public class DataMaker {
 	private int[] data;
 	private Random r;
 	private RandomFactory rF;
-	private int dataLen = 99999;
+	private int datasetSize = 7;
+	private int minNum = -1000;
+	private int maxNum = 999;
 
 	/**
 	 * @Title
@@ -34,10 +36,10 @@ public class DataMaker {
 	}
 
 	public void init() {
-		data = new int[dataLen];
+		data = new int[datasetSize];
 		r = new Random();
-		for (int i = 0; i < dataLen; i++) {
-			data[i] = r.nextInt(dataLen);
+		for (int i = 0; i < datasetSize; i++) {
+			data[i] = r.nextInt(minNum, maxNum);
 		}
 	}
 
