@@ -8,10 +8,10 @@
 */
 package com.quinn.algorithms.sort;
 
-import java.util.Random;
-
+import com.quinn.algorithms.infra.DataMaker;
+import com.quinn.algorithms.infra.Flow;
 import com.quinn.algorithms.tool.Metrics;
-import com.quinn.algorithms.tool.RandomFactory;
+import com.quinn.algorithms.tool.Swap;
 
 /**
  * @ClassName InsertionSort
@@ -19,7 +19,19 @@ import com.quinn.algorithms.tool.RandomFactory;
  * @author pigmilk
  * @date Apr 21, 2022 9:49:28 AM
  */
-public class InsertionSort {
-	
+public class InsertionSort extends Flow {
+
+	private static int[] data = new DataMaker().getData();
+	private static Metrics m = new Metrics();
+
+	public static void main(String[] args) {
+//		new InsertionSort().exec(data);
+		// TODO
+	}
+
+	public void algorithm(int[] data) {
+		// TODO
+
+	}
 
 }
