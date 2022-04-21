@@ -23,7 +23,7 @@ public class DataMaker {
 	private int[] data;
 	private Random r;
 	private RandomFactory rF;
-	private int dataLen = 100;
+	private int dataLen = 99999;
 
 	/**
 	 * @Title
