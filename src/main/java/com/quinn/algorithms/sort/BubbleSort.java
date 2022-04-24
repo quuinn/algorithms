@@ -22,7 +22,6 @@ import com.quinn.algorithms.tool.Swap;
 
 public class BubbleSort extends Flow {
 	private static int[] data = new DataMaker().getData();
-	private static Metrics m = new Metrics();
 
 	public static void main(String[] args) {
 		new BubbleSort().exec(data);
