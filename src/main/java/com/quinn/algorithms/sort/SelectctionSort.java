@@ -21,7 +21,6 @@ import com.quinn.algorithms.tool.Swap;
  */
 public class SelectctionSort extends Flow {
 	private static int[] data = new DataMaker().getData();
-	private static Metrics m = new Metrics();
 
 	/*
 	 * Title: algorithm Description:

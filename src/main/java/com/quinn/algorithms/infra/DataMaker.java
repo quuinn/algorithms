@@ -22,7 +22,6 @@ import com.quinn.algorithms.tool.RandomFactory;
 public class DataMaker {
 	private int[] data;
 	private Random r;
-	private RandomFactory rF;
 	private int datasetSize = 7;
 	private int minNum = -1000;
 	private int maxNum = 999;
