@@ -2,7 +2,7 @@
 * @Title RingBuffer.java 
 * @Package com.quinn.algorithms.infra.structures 
 * @Description TODO 
-* @author pigmilk
+* @author Quinn
 * @date Apr 26, 2022 3:04:14 PM 
 * @version 1.0.0   
 */
@@ -19,7 +19,7 @@ import lombok.Setter;
 /**
  * @ClassName RingBuffer
  * @Description TODO(這裡用一句話描述這個類的作用)
- * @author pigmilk
+ * @author Quinn
  * @param <E>
  * @date Apr 26, 2022 3:04:14 PM
  */

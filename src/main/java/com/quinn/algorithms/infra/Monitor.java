@@ -2,7 +2,7 @@
 * @Title: Monitor.java 
 * @Package com.quinn.algorithms.infra 
 * @Description: TODO 
-* @author pigmilk
+* @author Quinn
 * @date Apr 15, 2022 10:26:50 PM 
 * @version 1.0.0   
 */
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 /**
  * @ClassName: Monitor
  * @Description: TODO(這裡用一句話描述這個類的作用)
- * @author pigmilk
+ * @author Quinn
  * @date Apr 15, 2022 10:26:50 PM
  */
 

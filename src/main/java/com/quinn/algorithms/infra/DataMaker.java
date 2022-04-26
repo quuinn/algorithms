@@ -2,7 +2,7 @@
 * @Title DataMaker.java 
 * @Package com.quinn.algorithms.infra 
 * @Description TODO 
-* @author pigmilk
+* @author Quinn
 * @date Apr 21, 2022 3:39:03 PM 
 * @version 1.0.0   
 */
@@ -16,7 +16,7 @@ import com.quinn.algorithms.tool.RandomFactory;
 /**
  * @ClassName DataMaker
  * @Description TODO(這裡用一句話描述這個類的作用)
- * @author pigmilk
+ * @author Quinn
  * @date Apr 21, 2022 3:39:03 PM
  */
 public class DataMaker {

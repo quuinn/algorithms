@@ -2,7 +2,7 @@
 * @Title: Swap.java 
 * @Package com.quinn.algorithms.tool 
 * @Description: TODO 
-* @author pigmilk
+* @author Quinn
 * @date Apr 15, 2022 9:50:26 PM 
 * @version 1.0.0   
 */
@@ -11,7 +11,7 @@ package com.quinn.algorithms.tool;
 /**
  * @ClassName: Swap
  * @Description: TODO(這裡用一句話描述這個類的作用)
- * @author pigmilk
+ * @author Quinn
  * @date Apr 15, 2022 9:50:26 PM
  */
 public class Swap {

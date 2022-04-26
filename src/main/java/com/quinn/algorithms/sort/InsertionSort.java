@@ -2,7 +2,7 @@
   * @Title InsertionSort.java 
 * @Package com.quinn.algorithms.sort 
 * @Description TODO 
-* @author pigmilk
+* @author Quinn
 * @date Apr 21, 2022 9:49:28 AM 
 * @version 1.0.0   
 */
@@ -16,7 +16,7 @@ import com.quinn.algorithms.tool.Swap;
 /**
  * @ClassName InsertionSort
  * @Description TODO(這裡用一句話描述這個類的作用)
- * @author pigmilk
+ * @author Quinn
  * @date Apr 21, 2022 9:49:28 AM
  */
 public class InsertionSort extends Flow {

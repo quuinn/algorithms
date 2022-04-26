@@ -2,7 +2,7 @@
 * @Title: RandomFactory.java 
 * @Package com.quinn.algorithms.tool 
 * @Description: TODO 
-* @author pigmilk
+* @author Quinn
 * @date Apr 15, 2022 9:50:58 PM 
 * @version 1.0.0   
 */
