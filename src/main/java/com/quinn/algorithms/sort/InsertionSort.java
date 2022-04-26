@@ -22,15 +22,24 @@ import com.quinn.algorithms.tool.Swap;
 public class InsertionSort extends Flow {
 
 	private static int[] data = new DataMaker().getData();
-	private static Metrics m = new Metrics();
 
 	public static void main(String[] args) {
-//		new InsertionSort().exec(data);
-		// TODO
+//		data = new int[] { 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+//		data = new int[] { 5,1,4,10,15,3,2 };
+		new InsertionSort().exec(data);
 	}
 
 	public void algorithm(int[] data) {
-		// TODO
+		for (int i = 0; i < data.length; i++) {
+			if (i == 0) {
+				continue;
+			}
+			if (data[i] < data[i - 1]) {
+				Swap.x_y(data, i, i - 1);
+				i = 0;
+			}
+			addCnt();
+		}
 
 	}
 

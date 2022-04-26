@@ -38,6 +38,7 @@ public class BubbleSort extends Flow {
 	public void algorithm(int[] data) {
 		for (int i = 0; i < data.length; i++) {
 			for (int j = 0; j + 1 < data.length; j++) {
+				addCnt();
 				if (data[j] > data[j + 1]) {
 					Swap.x_y(data, j, j + 1);
 				}
